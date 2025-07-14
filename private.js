@@ -18,14 +18,14 @@ if (!db[from].perkenalan) {
   db[from].perkenalan = true
   fs.writeJsonSync(path, db, { spaces: 2 })
   return sock.sendMessage(from, {
-    text: `📋 *MENU UTAMA - TACATIC BOT 04*\n\n🌟 Aku bisa bantu kamu jagain grup lohh~\nPilih aja yang kamu mau:\n\n• 🎮 _.fitur_ – Liat semua kekuatan botku!\n• 💸 _.sewa_ – Info sewa (murce!)\n• 🙋‍♂️ _.owner_ – Chat abang owner botku 💌\n• 🤖 _.maujadibot_ – Ingin jadi bot juga?`
+    text: `📋 *MENU UTAMA - AZMNIS BOT*\n\n🌟 Aku bisa bantu kamu jagain grup lohh~\nPilih aja yang kamu mau:\n\n• 🎮 _.fitur_ – Liat semua kekuatan botku!\n• 💸 _.sewa_ – Info sewa (murce!)\n• 🙋‍♂️ _.owner_ – Chat abang owner botku 💌\n• 🤖 _.maujadibot_ – Ingin jadi bot juga?`
   })
 }
 
   // 📋 Menu utama lucu
   if (text.toLowerCase() === '.menu') {
     return sock.sendMessage(from, {
-      text: `📋 *MENU UTAMA - TACATIC BOT 04*\n\n🌟 Aku bisa bantu kamu jagain grup lohh~\nPilih aja yang kamu mau:\n\n• 🎮 _.fitur_  – Liat semua kekuatan botku!\n• 💸 _.sewa_   – Info sewa (murce!)\n• 🙋‍♂️ _.owner_ – Chat abang owner botku 💌\n• 🤖 _.maujadibot_ – Ingin jadi bot juga?`
+      text: `📋 *MENU UTAMA - AZMNIS BOT*\n\n🌟 Aku bisa bantu kamu jagain grup lohh~\nPilih aja yang kamu mau:\n\n• 🎮 _.fitur_  – Liat semua kekuatan botku!\n• 💸 _.sewa_   – Info sewa (murce!)\n• 🙋‍♂️ _.owner_ – Chat abang owner botku 💌\n• 🤖 _.maujadibot_ – Ingin jadi bot juga?`
     })
   }
 
@@ -34,7 +34,7 @@ if (text.toLowerCase() === '.maujadibot') {
   return sock.sendMessage(from, {
     text: `💎 *MAU JADI BOT SENDIRI?*
 
-Kamu bisa punya *Bot WhatsApp Profesional* seperti *Tacatic 04*, dengan fitur lengkap dan tampil keren! Cocok buat jagain grup pribadi, komunitas, bahkan bisa kamu sewakan lagi untuk cuan! 💸
+Kamu bisa punya *Bot WhatsApp Profesional* seperti *AZMNIS*, dengan fitur lengkap dan tampil keren! Cocok buat jagain grup pribadi, komunitas, bahkan bisa kamu sewakan lagi untuk cuan! 💸
 
 🚀 *FITUR YANG AKAN KAMU DAPATKAN:*
 • Auto jaga grup 24 jam (anti spam, antilink, welcome, dll)
@@ -65,7 +65,7 @@ Jadi, kamu nggak beli “kode asal comot”, tapi beli sistem profesional 🤝
 ---
 
 💰 *HARGA SCRIPT:*
-• 35K = *Basic Version* – Full Source Code TANPA bisa rename (Pakai Nama Tacatic) 
+• 35K = *Basic Version* – Full Source Code TANPA bisa rename (Pakai Nama AZMNIS) 
 • 60K = *Premium Version* – Full Source Code + Rename Bot (Pakai Nama Kamu) + Panduan Lengkap Termux + Support bantu pasang
 
 📜 *Lihat daftar fitur lengkap?*
@@ -79,7 +79,7 @@ Langsung ketik *.owner* untuk tanya-tanya atau order sekarang juga!`
   // 🛡️ List fitur jaga grup + tambahan lainnya
 if (text === '.fitur') {
   return sock.sendMessage(from, {
-    text: `🛡️ *FITUR JAGA GRUP – TACATIC BOT 04*
+    text: `🛡️ *FITUR JAGA GRUP – AZMNIS BOT*
 
 Aku bisa bantu kamu jagain grup dari yang nakal-nakal 😼:
 
@@ -106,14 +106,14 @@ Aku bisa bantu kamu jagain grup dari yang nakal-nakal 😼:
 • 📷 _.hd_ – Perjelas dan HD-kan gambar otomatis
 • 🎵 _.tiktok <link>_ – Download video TikTok tanpa watermark
 
-👾 Powered by *Tacatic 04*`
+👾 Powered by *AZMNIS*`
   }, { quoted: msg });
 }
 
   // 💸 Info sewa bot
 if (text === '.sewa') {
   return sock.sendMessage(from, {
-    text: `📦 *SEWA TACATIC BOT 04*
+    text: `📦 *SEWA AZMNIS BOT*
 
 Bot ini punya fitur:
 • Auto hapus link & iklan
@@ -144,7 +144,7 @@ Bot ini punya fitur:
 // 💳 Info sistem transfer sewa bot
 if (text === '.mausewa') {
   return sock.sendMessage(from, {
-    text: `💳 *SISTEM PEMBAYARAN SEWA BOT TACATIC 04*
+    text: `💳 *SISTEM PEMBAYARAN SEWA BOT AZMNIS*
 
 📦 Harga:
 • 3K = 1 Minggu
@@ -196,7 +196,7 @@ if (text === '.owner') {
 BEGIN:VCARD
 VERSION:3.0
 FN:Caa Owner Official
-ORG:TACATIC BOT 04;
+ORG:AZMNIS BOT;
 TEL;type=CELL;type=VOICE;waid=${OWNER_NUM}:${OWNER_NUM}
 END:VCARD`;
 
@@ -210,7 +210,7 @@ END:VCARD`;
 
   // Lalu kirim teks info
   return sock.sendMessage(from, {
-    text: `📱 Berikut kontak *Caa Owner Official* (Pemilik Tacatic 04)\n\nSilakan chat jika ada pertanyaan ya~`,
+    text: `📱 Berikut kontak *Caa Owner Official* (Pemilik AZMNIS)\n\nSilakan chat jika ada pertanyaan ya~`,
     quoted: msg
   });
 }
@@ -237,7 +237,7 @@ if (text === '.cekgrup') {
   if (!hasil) hasil = '📭 Tidak ada grup aktif terdaftar.'
 
   return sock.sendMessage(from, {
-    text: `📊 *Daftar Grup Aktif Tacatic Bot:*\n${hasil}`
+    text: `📊 *Daftar Grup Aktif AZMNIS Bot:*\n${hasil}`
   })
 }
   

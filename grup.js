@@ -169,7 +169,7 @@ if (['.aktifbot3k', '.aktifbot5k', '.aktifbot7k', '.aktifbotper'].includes(text)
 fs.writeJsonSync(dbFile, db, { spaces: 2 })
 
   return sock.sendMessage(from, {
-    text: `✅ *Tacatic Bot 04* berhasil diaktifkan!\n🆔 Grup ID: *${from}*\n📛 Nama Grup: *${fitur.nama || 'Tidak tersedia'}*\n📅 Masa aktif: *${fitur.permanen ? 'PERMANEN' : fitur.expired}*`
+    text: `✅ *AZMNIS Bot* berhasil diaktifkan!\n🆔 Grup ID: *${from}*\n📛 Nama Grup: *${fitur.nama || 'Tidak tersedia'}*\n📅 Masa aktif: *${fitur.permanen ? 'PERMANEN' : fitur.expired}*`
   }, { quoted: msg });
 }
 
@@ -338,7 +338,7 @@ global.strikeCache = strikeDB; // update cache biar tetap sinkron
 if (text === '.menu') {
   if (isAdmin || isOwner) {
     return sock.sendMessage(from, {
-      text: `╔═══🎀 *TACATIC BOT 04 - MENU FITUR* 🎀═══╗
+      text: `╔═══🎀 *AZMNIS BOT - MENU FITUR* 🎀═══╗
 
 📛 *FITUR KEAMANAN*:
 • 🚫 _.antilink1 on/off_  → Hapus link masuk
@@ -379,7 +379,7 @@ if (text === '.menu') {
     }, { quoted: msg });
   } else {
     return sock.sendMessage(from, {
-      text: `🎀 *MENU MEMBER – TACATIC BOT 04* 🎀
+      text: `🎀 *MENU MEMBER – AZMNIS BOT* 🎀
 
 🛠️ *Fitur yang bisa kamu gunakan:*
 
@@ -403,7 +403,7 @@ Contoh: _.bratv2 haloo gais_
 • 📋 _.menu_  
 → Lihat daftar fitur yang tersedia
 
-✨ Nikmati fitur seru dari *Tacatic Bot 04*!`,
+✨ Nikmati fitur seru dari *AZMNIS Bot*!`,
     }, { quoted: msg });
   }
 }

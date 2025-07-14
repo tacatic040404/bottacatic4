@@ -50,7 +50,7 @@ module.exports = async (sock, msg, text, from, sender, isAdmin, isOwner) => {
 
  if (text === '.menu') {
   return sock.sendMessage(from, {
-    text: `🎀 *MENU MEMBER – TACATIC BOT 04* 🎀
+    text: `🎀 *MENU MEMBER – AZMNIS BOT* 🎀
 
 🛠️ *Fitur Tersedia untuk Member:*
 • 📋 _.menu_ – Lihat daftar fitur
@@ -61,7 +61,7 @@ module.exports = async (sock, msg, text, from, sender, isAdmin, isOwner) => {
 • 💬 _.addbrat teks_ – Buat stiker teks lucu
 • 💬 _.bratv2 teks_ – Buat stiker teks elegan
 
-✨ Nikmati fitur seru dari *Tacatic Bot 04*!`,
+✨ Nikmati fitur seru dari *AZMNIS Bot*!`,
   }, { quoted: msg });
 }
 
